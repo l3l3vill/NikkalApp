@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_bg"
+    tools:context=".view.menuNavegacion.Pantalla_Principal.CategoriaFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+        android:id="@+id/pbCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        />
+
+    <LinearLayout
+        android:id="@+id/categoriaContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frameCoverFlow"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+                <TextView
+                    android:id="@+id/titleTopChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NIKKAL"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"/>
+            </FrameLayout>
+
+            <it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow
+                android:id="@+id/coverFlow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frameCoverFlow"
+                android:layout_alignTop="@+id/frameCoverFlow"
+                app:coverHeight="100dp"
+                app:coverWidth="100dp"
+                app:maxScaleFactor="1.5"
+                app:reflectionGap="0px"
+                app:rotationThreshold="0.5"
+                app:spacing="0.6"
+                android:layout_marginTop="30dp"/>
+
+
+            <TextSwitcher
+                android:id="@+id/tituloTopChart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coverFlow"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvGeneroRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:theme="@style/albumRecyclerView"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvGeneroRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/tvSugerenciaRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="sans-serif"
+            android:theme="@style/albumRecyclerView" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvSugerenciaRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <TextView
+            android:id="@+id/tvMasEscuchadoRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:theme="@style/albumRecyclerView" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMasEscuchadoRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <TextView
+            android:id="@+id/tvFavoritoRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:theme="@style/albumRecyclerView" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvFavoritoRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".view.InicioActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/nikkal"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginBottom="75dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@drawable/logonikkal" />
+
+        <TextView
+            android:id="@+id/nikkalLetra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="90dp"
+            android:text="NIKKAL"
+            android:textColor="@color/album_titulo"
+            android:textSize="60sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/botonoffline"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/roundedbutton"
+            android:text="Modo Offline"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:layout_marginBottom="45dp"/>
+
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

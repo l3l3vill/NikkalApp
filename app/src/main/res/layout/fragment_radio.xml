@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_bg"
+    tools:context=".view.menuNavegacion.Radio_Online.RadioFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="NIKKAL"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorAccent"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/subTitleRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleRadio"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-13dp"
+            android:text="Radio"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_below="@+id/subTitleRadio">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/llPlayStop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="7dp"
+        android:background="@color/album_background"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/album_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvNombreRadioReprod"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/album_titulo"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/ibPlayStop"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/ic_stop"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|right"
+            android:visibility="invisible"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"/>
+
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:visibility="invisible"/>
+
+
+</FrameLayout>

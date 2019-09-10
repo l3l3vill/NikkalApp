@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Nikkal</string>
+    <string name="app_name1">Radio Online</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="accion_agregar_favoritos">Add to Favorites</string>
+    <string name="tv_genero">Genders</string>
+    <string name="tv_sugerencia">Suggestions</string>
+    <string name="tv_mas_escuchado">The Most Listened</string>
+    <string name="tv_favorito">Favorites</string>
+    <string name="btnbar_inicio">Home</string>
+    <string name="btnbar_buscar">Search</string>
+    <string name="btnbar_favorito">Favorites</string>
+    <string name="btnbar_radio">Radios</string>
+    <string name="btnbar_ajuste">Setting</string>
+
+    <string name="tv_busqueda_reciente">Recent searches</string>
+    <string name="hint_buscar">Search</string>
+    <string name="tv_canciones_favoritas">Songs</string>
+    <string name="tv_artistas_favoritos">Artist</string>
+    <string name="tv_almbum_favoritos">albums</string>
+    <string name="tv_mis_playlist">My Playlist</string>
+    <string name="tv_titulo_favoritos">Favorites</string>
+    <string name="tv_escuchadas_recientemente">Recently Played</string>
+    <string name="tv_titulo_escuchadas_recientemente">Tittle Recently Played</string>
+    <string name="tv_subtitulo_escuchadas_recientemente">Subtittle Recently Played</string>
+
+
+
+</resources>
